@@ -1,87 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<base href="https://google.com/" />
+	<base href="https://railsphonegap.herokuapp.com/" />
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<link href="assets/favicon196.png" rel="icon" sizes="196x196" type="image/png" />
-	<title>DigitalDischarge</title>
+	<title>Website PhoneGap</title>
 
 	<meta name="google" value="notranslate">
 	<meta http-equiv="Content-Language" content="en_US" />
 
 	<!-- need this for phonegap cross domain -->
-	<!-- Enable all requests, inline styles, and eval() -->
 	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 </head>
-<body class="notranslate" translate="no">
-	<!-- yay, a comment! -->
-	<header id="hh-demo-header">
-		<a href="#" id="logo"></a>
-
-		<div class="hh-power">
-			<div class="hh-power-img">
-				<img src="assets/logo_normal_color.png" alt="Homeward Healthcare" />
-			</div>
-			<div class="hh-power-by">
-				Powered by<br />
-				Homeward Healthcare
-			</div>
-		</div>
-	</header>
-
-	<div id="hh-slideshow"></div>
-	<input type="hidden" id="partial-slideshow-data" />
-
-	<script src="../phonegap.js"></script><!-- required for phonegap -->
-	<script src="assets/master.js"></script>
-
-	<!-- very basic offline page -->
-	<!--
-	<script type="text/javascript">
-	function showOfflineMessage() {
-		document.body.innerHTML = '<div align="center" style="font-family:sans-serif; padding:2em;"><h1>No Internet Connection</h1><p style="font-size:1.3em; max-width:460px;">Please make sure this device is able to access the Internet.</p><h2><a href="#" onclick="location.reload(); return false;" style="color:#087C97;">Try Again</a></h2></div>';
-	}
-	function showNoServerMessage() {
-		document.body.innerHTML = '<div align="center" style="font-family:sans-serif; padding:2em;"><h1>Service Unavailable</h1><p style="font-size:1.3em; max-width:460px;">The Digital Discharge&trade; service is currently unavailable.  The system may be down for maintenance.  Please try again in a little while.</p><h2><a href="#" onclick="location.reload(); return false;" style="color:#087C97;">Try Again</a></h2></div>';
-	}
-	function isDeviceOffline() {
-	    var isOffline = 'onLine' in navigator && !navigator.onLine;
-	    return isOffline;
-	}
-	function isServerWorking() {
-		console.log('D');
-		var oReq = new XMLHttpRequest();
-	    var url = '/server-test.html';
-		oReq.onerror = function() { showNoServerMessage(); }
-		oReq.onabort = function() { showNoServerMessage(); }
-		oReq.onreadystatechange = function() {
-			console.log('onreadystatechange');
-			if ( oReq.readyState === 4 ) {
-				console.log('readyState 4 oReq:', oReq);
-				if ( oReq.status === 503 ) {
-					showNoServerMessage();
-				}
-			}
-		}
-	    oReq.open("GET", url);
-	    oReq.send();
-	    console.log('oReq', oReq);
-	}
-	console.log('A');
-	if ( isDeviceOffline() ) {
-		console.log('B');
-		showOfflineMessage();
-	}
-	else {
-		console.log('C');
-		isServerWorking();
-	}
-	</script>
-	-->
-	<script>
-	document.body.innerHTML = '<h1>This is Page A!<br><a href="/page-b.html">Page B &gt;</a></h1>'
-	</script>
+<body>
+	<h1>Website PhoneGap</h1>
 </body>
 </html>

@@ -8,7 +8,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>DigitalDischarge</name>
+    <name>Website PhoneGap</name>
 	<icon src="assets/icon.png" />
 	<gap:splash src="assets/splash.png" />
 
@@ -20,7 +20,7 @@
 	<preference name="SplashScreenDelay" value="10000"/>
 
     <description>
-		Homeward Healthcare Digital Discharge
+		Homeward Healthcare Website PhoneGap
     </description>
 
     <author href="https://www.homewardhealthcare.com" email="joeg@homewardhealthcare.com">
