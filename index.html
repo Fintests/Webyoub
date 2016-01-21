@@ -18,6 +18,12 @@
 	<h1>Website PhoneGap</h1>
 	<h2>inappbrowser (no crosswalk)</h2>
 
+	<ul>
+		<li><a href="/">index</a></li>
+		<li><a href="/articles">articles</a></li>
+	</ul>
+
+
 	<button class="href">Go to href</button>
 	<br>
 	<br>
@@ -43,6 +49,13 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script>
+		document.addEventListener("deviceready", onDeviceReady, false);
+
+		function onDeviceReady() {
+ 			window.location = "https://railsphonegap.herokuapp.com/";
+ 		}
+
+
 		$(function() {
 			$('.href').on('click', function() {
 				location.href = '/';
