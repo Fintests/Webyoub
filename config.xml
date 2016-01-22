@@ -28,9 +28,6 @@
 	<!-- Don't block any requests -->
 	<!-- <access origin="*" /> -->
 
-	<!-- allow local -->
-	<access origin="http://127.0.0.1*" />
-
-	<!-- This will open inside an app-->
+	<!-- This will open inside app -->
 	<access origin="https://railsphonegap.herokuapp.com" browserOnly="false" />
 </widget>
