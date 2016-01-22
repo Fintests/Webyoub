@@ -32,7 +32,11 @@
 	<preference name="orientation" value="landscape" />
 
 	<!-- plugins -->
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
+
+	<!-- This will open inside an app-->
+	<access origin="https://railsphonegap.herokuapp.com" browserOnly="false" />
+
+	<!-- <gap:plugin name="org.apache.cordova.inappbrowser" /> -->
 
 	<!-- Provides a polyfill for the deprecated fileSystem API -->
 	<gap:plugin name="org.apache.cordova.file" version="1.3.1" />
