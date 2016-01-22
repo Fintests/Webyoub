@@ -15,7 +15,6 @@
 
 	<preference name="EnableViewportScale" value="true" />
 	<preference name="fullscreen" value="true" />
-	<!-- <preference name="orientation" value="landscape" /> -->
 
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 
@@ -24,12 +23,6 @@
 
 	<!-- make webview browser be chromium -->
 	<!-- <gap:plugin name="org.crosswalk.engine" /> -->
-
-	<!-- Don't block any requests -->
-	<!-- <access origin="*" /> -->
-
-	<!-- Allow google cdn -->
-	<access origin="https://ajax.googleapis.com" />
 
 	<!-- This will open inside app -->
 	<access origin="https://railsphonegap.herokuapp.com" browserOnly="false" />
