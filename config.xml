@@ -6,8 +6,8 @@
         versionCode = "3"
         version     = "3" >
 
-    <name>Website PhoneGap</name>
-    <description>HH Website PhoneGap</description>
+    <name>Impact Report</name>
+    <description>IR demo</description>
 
     <author href="https://www.homewardhealthcare.com" email="joeg@homewardhealthcare.com">
         Homeward Healthcare
