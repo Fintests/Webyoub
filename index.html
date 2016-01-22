@@ -12,6 +12,7 @@
 		html,
 		body {
 			height: 100%;
+			overflow: hidden;
 		}
 
 		body {
@@ -27,7 +28,7 @@
 	<script src="cordova.js"></script>
 	<script>
 		document.addEventListener('deviceready', function() {
-			window.open('https://railsphonegap.herokuapp.com', '_blank', 'location=no,toolbar=no,zoom=no,EnableViewPortScale=no');
+			window.open('https://railsphonegap.herokuapp.com', '_blank', 'location=no', 'toolbar=no', 'zoom=no', 'EnableViewPortScale=no');
 		}, false);
 
 		document.addEventListener('backbutton', function() {
