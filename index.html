@@ -1,104 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- <base href="https://railsphonegap.herokuapp.com/"> -->
-
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>Website PhoneGap</title>
 
 	<!-- for phonegap cross domain -->
 	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-
-	<style>
-		li {
-			font-size: 1.5em;
-		}
-	</style>
 </head>
 <body>
 	<h1>Website PhoneGap</h1>
-	<h2>inappbrowser (no crosswalk)</h2>
-
-	<ul>
-		<li><a href="/">index</a></li>
-		<li><a href="/articles">articles</a></li>
-	</ul>
-
-	<ul>
-		<li><a href="https://railsphonegap.herokuapp.com/">https://railsphonegap.herokuapp.com/</a></li>
-	</ul>
-
-	<br>
-	<br>
-
-	<button class="href">location.href</button>
-	<br>
-	<br>
-
-	<button class="open">open: _blank, location=no, toolbar=no</button>
-	<br>
-	<br>
-
-	<button class="open2">open location=no</button>
-	<br>
-	<br>
-
-	<button class="open3">open location=yes</button>
-	<br>
-	<br>
-
-	<a href="#" onclick="window.open('https://railsphonegap.herokuapp.com/', '_system');">window.open system</a>
-	<br>
-	<br>
-
-	<a href="/">slash (/)</a>
-	<br>
-	<br>
-
-	<button class="nav">navigator.app</button>
-	<br>
-	<br>
 
 	<script src="cordova.js"></script>
-	<!-- <script src="phonegap.js"></script> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
 	<script>
-		$(function() {
-			console.log('on doc ready');
-
-			document.addEventListener("deviceready", onDeviceReady, false);
-
-			function onDeviceReady() {
-				console.log('on device ready');
-				//window.location = '/';
-				//window.location = "https://railsphonegap.herokuapp.com";
-
-				$('.href').on('click', function() {
-					location.href = '/';
-				});
-
-				$('.open').on('click', function() {
-					//window.open('/', '_blank', 'location=yes');
-					window.open('https://railsphonegap.herokuapp.com', '_blank', 'location=no,toolbar=no');
-				});
-
-				$('.open2').on('click', function() {
-					//window.open('/', 'location=no');
-					window.open('https://railsphonegap.herokuapp.com', 'location=no');
-				});
-
-				$('.open3').on('click', function() {
-					//window.open('/', 'location=yes');
-					window.open('https://railsphonegap.herokuapp.com', 'location=yes');
-				});
-
-				$('.nav').on('click', function() {
-					//navigator.app.loadUrl('/', {openExternal: false});
-					navigator.app.loadUrl("https://railsphonegap.herokuapp.com", {openExternal: false});
-				});
-			}
-		});
+		document.addEventListener("deviceready", function() {
+			window.open('https://railsphonegap.herokuapp.com', '_blank', 'location=no,toolbar=no');
+		}, false);
 	</script>
 </body>
 </html>
