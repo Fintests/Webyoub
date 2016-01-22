@@ -33,15 +33,17 @@
 <body>
 	<h1 id="loading">Loading...</h1>
 
-	<a href="httsp://railsphonegap.herokuapp.com" id="after-loading" class="hide">
+	<a onclick="goToApp()" id="after-loading" class="hide">
 		Go to Impact Report
 	</a>
 
 	<script src="cordova.js"></script>
 	<script>
-		document.addEventListener('deviceready', function() {
+		function goToApp() {
 			window.open('https://railsphonegap.herokuapp.com', '_self', 'location=no,toolbar=no,zoom=no,enableViewportScale=no,hardwareback=no');
-		}, false);
+		}
+
+		document.addEventListener('deviceready', goToApp, false);
 
 		setTimeout(function() {
 			var og = document.getElementById('loading');
