@@ -13,7 +13,7 @@
         Homeward Healthcare
     </author>
 
-	<!-- <preference name="EnableViewportScale" value="true" /> -->
+	<preference name="EnableViewportScale" value="false" />
 	<preference name="fullscreen" value="true" />
 
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
@@ -24,6 +24,6 @@
 	<!-- make webview browser be chromium -->
 	<!-- <gap:plugin name="org.crosswalk.engine" /> -->
 
-	<!-- This will open inside app -->
-	<access origin="https://railsphonegap.herokuapp.com" browserOnly="false" />
+	<!-- This will open inside app  browserOnly="false"  -->
+	<access origin="https://railsphonegap.herokuapp.com" />
 </widget>
