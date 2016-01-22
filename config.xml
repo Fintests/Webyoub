@@ -23,7 +23,7 @@
 	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
 
 	<!-- make webview browser be chromium -->
-	<!-- <gap:plugin name="org.crosswalk.engine" version="1.3.0" /> -->
+	<gap:plugin name="org.crosswalk.engine" />
 
 	<!-- Don't block any requests -->
 	<!-- <access origin="*" /> -->
