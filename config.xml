@@ -13,7 +13,7 @@
         Homeward Healthcare
     </author>
 
-	<preference name="EnableViewportScale" value="true" />
+	<!-- <preference name="EnableViewportScale" value="true" /> -->
 	<preference name="fullscreen" value="true" />
 
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
