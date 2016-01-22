@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<base href="https://railsphonegap.herokuapp.com/">
+	<!-- <base href="https://railsphonegap.herokuapp.com/"> -->
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
@@ -62,31 +62,31 @@
 
 			function onDeviceReady() {
 				console.log('on device ready');
-				window.location = '/';
-				//window.location = "https://railsphonegap.herokuapp.com";
+				//window.location = '/';
+				window.location = "https://railsphonegap.herokuapp.com";
 
 				$('.href').on('click', function() {
 					location.href = '/';
 				});
 
 				$('.open').on('click', function() {
-					window.open('/', '_blank', 'location=yes');
-					//window.open('https://railsphonegap.herokuapp.com', '_blank', 'location=yes');
+					//window.open('/', '_blank', 'location=yes');
+					window.open('https://railsphonegap.herokuapp.com', '_blank', 'location=yes');
 				});
 
 				$('.open2').on('click', function() {
-					window.open('/', 'location=no');
-					//window.open('https://railsphonegap.herokuapp.com', 'location=no');
+					//window.open('/', 'location=no');
+					window.open('https://railsphonegap.herokuapp.com', 'location=no');
 				});
 
 				$('.open3').on('click', function() {
-					window.open('/', 'location=yes');
-					//window.open('https://railsphonegap.herokuapp.com', 'location=yes');
+					//window.open('/', 'location=yes');
+					window.open('https://railsphonegap.herokuapp.com', 'location=yes');
 				});
 
 				$('.nav').on('click', function() {
-					navigator.app.loadUrl('/', {openExternal: false});
-					//navigator.app.loadUrl("https://railsphonegap.herokuapp.com", {openExternal: false});
+					//navigator.app.loadUrl('/', {openExternal: false});
+					navigator.app.loadUrl("https://railsphonegap.herokuapp.com", {openExternal: false});
 				});
 			}
 		});
