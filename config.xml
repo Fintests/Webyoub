@@ -17,13 +17,13 @@
 	<preference name="fullscreen" value="true" />
 	<!-- <preference name="orientation" value="landscape" /> -->
 
-	<!-- <gap:plugin name="org.apache.cordova.inappbrowser" /> -->
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
 
 	<!-- allow cross domain stuff -->
 	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
 
 	<!-- make webview browser be chromium -->
-	<gap:plugin name="org.crosswalk.engine" />
+	<!-- <gap:plugin name="org.crosswalk.engine" /> -->
 
 	<!-- Don't block any requests -->
 	<!-- <access origin="*" /> -->
