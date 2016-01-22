@@ -28,6 +28,9 @@
 	<!-- Don't block any requests -->
 	<!-- <access origin="*" /> -->
 
+	<!-- Allow google cdn -->
+	<access origin="https://ajax.googleapis.com" />
+
 	<!-- This will open inside app -->
 	<access origin="https://railsphonegap.herokuapp.com" browserOnly="false" />
 </widget>
