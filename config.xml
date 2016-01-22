@@ -6,22 +6,8 @@
         versionCode = "3"
         version     = "3" >
 
-    <!-- versionCode is optional and Android only -->
-
     <name>Website PhoneGap</name>
-	<icon src="assets/icon.png" />
-	<gap:splash src="assets/splash.png" />
-
-	<preference name="BackgroundColor" value="0xffffffff"/>
-
-	<!-- Do not auto hide splash on iOS -->
-	<preference name="AutoHideSplashScreen" value="false" />
-	<!-- Do not auto hide splash on Android -->
-	<preference name="SplashScreenDelay" value="10000"/>
-
-    <description>
-		Homeward Healthcare Website PhoneGap
-    </description>
+    <description>HH Website PhoneGap</description>
 
     <author href="https://www.homewardhealthcare.com" email="joeg@homewardhealthcare.com">
         Homeward Healthcare
@@ -29,28 +15,22 @@
 
 	<preference name="EnableViewportScale" value="true" />
 	<preference name="fullscreen" value="true" />
-	<preference name="orientation" value="landscape" />
-
-	<!-- plugins -->
+	<!-- <preference name="orientation" value="landscape" /> -->
 
 	<!-- <gap:plugin name="org.apache.cordova.inappbrowser" /> -->
 
-	<!-- Provides a polyfill for the deprecated fileSystem API -->
-	<gap:plugin name="org.apache.cordova.file" version="1.3.1" />
-	<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
 	<!-- allow cross domain stuff -->
 	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
 
 	<!-- make webview browser be chromium -->
 	<!-- <gap:plugin name="org.crosswalk.engine" version="1.3.0" /> -->
 
-	<!--<access origin="https://*.homewardhealthcare.com" />-->
 	<!-- Don't block any requests -->
 	<!-- <access origin="*" /> -->
 
+	<!-- allow local -->
+	<access origin="http://127.0.0.1*" />
 
 	<!-- This will open inside an app-->
 	<access origin="https://railsphonegap.herokuapp.com" browserOnly="false" />
-
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </widget>

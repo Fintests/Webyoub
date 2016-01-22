@@ -52,6 +52,9 @@
 	<br>
 	<br>
 
+	<button class="nav">navigator.app</button>
+	<br>
+	<br>
 
 
 	<script src="jquery-2.2.0.min.js"></script>
@@ -60,7 +63,7 @@
 
 		function onDeviceReady() {
 			console.log('on device ready');
- 			window.location = "https://railsphonegap.herokuapp.com/";
+ 			window.location = "https://railsphonegap.herokuapp.com";
  		}
 
 		$(function() {
@@ -69,15 +72,19 @@
 			});
 
 			$('.open').on('click', function() {
-				window.open('https://railsphonegap.herokuapp.com/', '_blank', 'location=yes');
+				window.open('https://railsphonegap.herokuapp.com', '_blank', 'location=yes');
 			});
 
 			$('.open2').on('click', function() {
-				window.open('https://railsphonegap.herokuapp.com/', 'location=no');
+				window.open('https://railsphonegap.herokuapp.com', 'location=no');
 			});
 
 			$('.open3').on('click', function() {
-				window.open('https://railsphonegap.herokuapp.com/', 'location=yes');
+				window.open('https://railsphonegap.herokuapp.com', 'location=yes');
+			});
+
+			$('.nav').on('click', function() {
+				navigator.app.loadUrl("https://railsphonegap.herokuapp.com", {openExternal: false});
 			});
 		});
 	</script>
