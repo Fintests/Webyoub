@@ -33,9 +33,6 @@
 
 	<!-- plugins -->
 
-	<!-- This will open inside an app-->
-	<access origin="https://railsphonegap.herokuapp.com" browserOnly="false" />
-
 	<!-- <gap:plugin name="org.apache.cordova.inappbrowser" /> -->
 
 	<!-- Provides a polyfill for the deprecated fileSystem API -->
@@ -49,7 +46,11 @@
 
 	<!--<access origin="https://*.homewardhealthcare.com" />-->
 	<!-- Don't block any requests -->
-	<access origin="*" />
+	<!-- <access origin="*" /> -->
+
+
+	<!-- This will open inside an app-->
+	<access origin="https://railsphonegap.herokuapp.com" browserOnly="false" />
 
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </widget>

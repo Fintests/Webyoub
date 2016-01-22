@@ -24,15 +24,23 @@
 	</ul>
 
 
-	<button class="href">Go to href</button>
+	<button class="href">location.href</button>
 	<br>
 	<br>
 
-	<button class="open">Go to open</button>
+	<button class="open">open _blank location=yes</button>
 	<br>
 	<br>
 
-	<a href="#" onclick="window.open('https://railsphonegap.herokuapp.com/', '_system');">window.open</a>
+	<button class="open2">open location=no</button>
+	<br>
+	<br>
+
+	<button class="open3">open location=yes</button>
+	<br>
+	<br>
+
+	<a href="#" onclick="window.open('https://railsphonegap.herokuapp.com/', '_system');">window.open system</a>
 	<br>
 	<br>
 
@@ -46,15 +54,14 @@
 
 
 
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script>
 		document.addEventListener("deviceready", onDeviceReady, false);
 
 		function onDeviceReady() {
+			console.log('on device ready');
  			window.location = "https://railsphonegap.herokuapp.com/";
  		}
-
 
 		$(function() {
 			$('.href').on('click', function() {
@@ -63,6 +70,14 @@
 
 			$('.open').on('click', function() {
 				window.open('https://railsphonegap.herokuapp.com/', '_blank', 'location=yes');
+			});
+
+			$('.open2').on('click', function() {
+				window.open('https://railsphonegap.herokuapp.com/', 'location=no');
+			});
+
+			$('.open3').on('click', function() {
+				window.open('https://railsphonegap.herokuapp.com/', 'location=yes');
 			});
 		});
 	</script>
