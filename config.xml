@@ -20,6 +20,23 @@
 
 	<!-- allow cross domain stuff -->
 	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
+	
+	<!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+    <icon src="icons/ldpi.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="icons/mdpi.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="icons/hdpi.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="icons/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="icons/bb_icon.png" gap:platform="blackberry" />
+    <icon src="icons/bb_icon_hover.png" gap:platform="blackberry" gap:state="hover"/>
+    <icon src="icons/ios_icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="icons/ios_icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="icons/ios_icon@2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="icons/ios_icon-72@2x.png" gap:platform="ios" width="144" height="144" />
+    <icon src="icons/webos_icon.png" gap:platform="webos" />
+    <icon src="icons/webos_miniicon.png" gap:platform="webos" gap:role="mini" />
+    <icon src="icons/winphone_icon.png" gap:platform="winphone" />
+<icon src="icons/winphone_tileicon.png" gap:platform="winphone" gap:role="background" />
 
 	<!-- make webview browser be chromium -->
 	<!-- <gap:plugin name="org.crosswalk.engine" /> -->
