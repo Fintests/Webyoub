@@ -6,11 +6,11 @@
         versionCode = "3"
         version     = "3" >
 
-    <name>Impact Report</name>
-    <description>IR demo</description>
+    <name>Stichting Mouahidin</name>
+    <description>Moskee</description>
 
     <author href="https://www.homewardhealthcare.com" email="joeg@homewardhealthcare.com">
-        Homeward Healthcare
+        Stichting Mouahidin
     </author>
 
 	<!-- <preference name="EnableViewportScale" value="false" /> -->
@@ -25,5 +25,5 @@
 	<!-- <gap:plugin name="org.crosswalk.engine" /> -->
 
 	<!-- This will open inside app -->
-	<access origin="https://railsphonegap.herokuapp.com" />
+	<access origin="http://mouahidin.nl" />
 </widget>
