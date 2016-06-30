@@ -42,5 +42,5 @@
 	<!-- <gap:plugin name="org.crosswalk.engine" /> -->
 
 	<!-- This will open inside app -->
-	<access origin="http://webyoub.tk" />
+	<access origin="http://www2.testbak.simpsite.nl//" />
 </widget>
