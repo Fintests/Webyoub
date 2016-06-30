@@ -22,7 +22,7 @@
 	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
 	
 	<!-- Define app icon for each platform. -->
-    <icon src="iconv.png" />
+    <icon src="iconva.png" />
     <icon src="ldpiv.png" gap:platform="android" gap:density="ldpi" />
     <icon src="mdpiv.png" gap:platform="android" gap:density="mdpi" />
     <icon src="hdpiv.png" gap:platform="android" gap:density="hdpi" />
