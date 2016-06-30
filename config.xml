@@ -6,11 +6,11 @@
         versionCode = "3"
         version     = "3" >
 
-    <name>VISHANDEL APP</name>
-    <description>said</description>
+    <name>Webyoub</name>
+    <description>voor website en app</description>
 
     <author href="https://www.homewardhealthcare.com" email="joeg@homewardhealthcare.com">
-        Vishandel Said vof
+        webyoub
     </author>
 
 	<!-- <preference name="EnableViewportScale" value="false" /> -->
