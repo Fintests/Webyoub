@@ -22,11 +22,11 @@
 	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
 	
 	<!-- Define app icon for each platform. -->
-    <icon src="icon.png" />
-    <icon src="ldpi.png" gap:platform="android" gap:density="ldpi" />
-    <icon src="mdpi.png" gap:platform="android" gap:density="mdpi" />
-    <icon src="hdpi.png" gap:platform="android" gap:density="hdpi" />
-    <icon src="xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="iconv.png" />
+    <icon src="ldpiv.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="mdpiv.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="hdpiv.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="xhdpiv.png" gap:platform="android" gap:density="xhdpi" />
     <icon src="icons/bb_icon.png" gap:platform="blackberry" />
     <icon src="icons/bb_icon_hover.png" gap:platform="blackberry" gap:state="hover"/>
     <icon src="icons/ios_icon.png" gap:platform="ios" width="57" height="57" />
@@ -42,5 +42,5 @@
 	<!-- <gap:plugin name="org.crosswalk.engine" /> -->
 
 	<!-- This will open inside app -->
-	<access origin="http://autorijschoolspits.nl" />
+	<access origin="http://webyoub.tk" />
 </widget>
