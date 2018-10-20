@@ -16,10 +16,10 @@
 	<!-- <preference name="EnableViewportScale" value="false" /> -->
 	<preference name="fullscreen" value="true" />
 
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<plugin name="org.apache.cordova.inappbrowser" source="pgb" spec="0.6.0" />
 
 	<!-- allow cross domain stuff -->
-	<gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
+	<plugin name="cordova-plugin-whitelist" spec="1.0.0" />
 	
 	<!-- Define app icon for each platform. -->
     <icon src="iconva.png" />
