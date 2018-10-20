@@ -16,7 +16,7 @@
 	<!-- <preference name="EnableViewportScale" value="false" /> -->
 	<preference name="fullscreen" value="true" />
 
-	<plugin name="org.apache.cordova.inappbrowser" source="pgb" spec="0.6.0" />
+	<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 
 	<!-- allow cross domain stuff -->
 	<plugin name="cordova-plugin-whitelist" spec="1.0.0" />
